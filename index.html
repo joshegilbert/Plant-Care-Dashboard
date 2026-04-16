@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Care Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <header>
+        <h1>Plant Care</h1>
+        <div class="bluetooth-nav">
+          <!-- <button id="update" @click="update" class="connect-btn">
+            Update
+          </button> -->
+          <button id="connect" @click="connect" class="connect-btn">
+            Connect
+          </button>
+        </div>
+      </header>
+      <main>
+        <div class="main-info">
+          <section class="plant-status">
+            <div class="plant-card">
+              <div
+                class="plant-img"
+                :style="{ backgroundImage: 'url(' + plantImage + ')' }"
+              ></div>
+              <div class="water-status">
+                <h3>Need Water</h3>
+                <h4>{{needWaterText}}</h4>
+              </div>
+            </div>
+          </section>
+          <aside class="plant-details">
+            <div class="plant-info">
+              <div class="plant-nav">
+                <h2>Data</h2>
+              </div>
+              <div class="info-item">
+                <span>Soil Moisture</span>
+                <span>{{ SoilMoisture }}</span>
+              </div>
+              <div class="info-item">
+                <span>Temperature</span>
+                <span>{{Temperature}}</span>
+              </div>
+              <div class="info-item">
+                <span>Air Moisture</span>
+                <span>{{ AirMoisture }}</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
