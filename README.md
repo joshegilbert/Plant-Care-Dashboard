@@ -74,6 +74,10 @@ BLE UUIDs and polling behavior live in `app.js`:
 - **One characteristic** — Current flow assumes a single readable characteristic with a text payload; extend as needed for notifications or multiple characteristics.
 - **Image paths** — `app.js` references image filenames; add those files beside `index.html` or update paths for your deployment.
 
+
+<img width="1499" height="636" alt="Screenshot 2026-04-27 at 10 15 00 PM" src="https://github.com/user-attachments/assets/1797098d-bb36-41bc-af2b-232e24c2de21" />
+
+
 ## License
 
 MIT — use freely in your portfolio and projects.
