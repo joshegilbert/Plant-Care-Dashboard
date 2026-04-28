@@ -5,6 +5,8 @@ A browser-based plant monitoring dashboard that pairs with a Bluetooth Low Energ
 ![Stack](https://img.shields.io/badge/stack-Vue%203%20%7C%20Web%20Bluetooth-4caf50?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
+<img width="4032" height="3024" alt="IMG_3644" src="https://github.com/user-attachments/assets/419c4ec9-8eb1-43b2-b580-3c216237d83e" />
+
 ## Why this project
 
 **PlantPulse** pairs a small Vue dashboard with ESP32 firmware: the board reads soil moisture (analog), temperature, and humidity (DHT11), exposes them over BLE, and the browser reads the same GATT characteristic—no native app required. The UI reacts to a soil-moisture threshold and updates styling (and optional imagery) to reflect whether the plant needs water.
